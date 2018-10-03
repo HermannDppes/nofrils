@@ -249,7 +249,7 @@ var colors = map[string]color{
 	"Violet":            color{"177", "#D787FF"},
 	"Wheat1":            color{"229", "#FFFFAF"},
 	"Wheat2":            color{"101", "#87875F"},
-	"White":             color{"15", "white"},
+	"White":             color{"white", "white"},
 	"Yellow1":           color{"11", "#FFFF00"},
 	"Yellow2":           color{"226", "#FFFF00"},
 	"Yellow3":           color{"190", "#D7FF00"},
