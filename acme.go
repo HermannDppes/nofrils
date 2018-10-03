@@ -22,10 +22,10 @@ func acme() nofrilsTheme {
 	heavyCommentRow := vimColorRow{FG: colors["DeepPink8"], BG: colors["NONE"], Attr: none}
 	heavyStringRow := vimColorRow{FG: colors["Grey100"], BG: colors["NONE"], Attr: none}
 	heavyLineRow := vimColorRow{FG: colors["DeepPink8"], BG: colors["NONE"], Attr: none}
+	reversedRow := vimColorRow{FG: colors["NONE"], BG: colors["NONE"], Attr: reverse}
 
-	pmenuRow := reverse(normalRow)
-	visualNOSRow := reverse(directoryRow)
-	commentRow := reverse(visualSelectRow)
+	visualNOSRow := directoryRow.reversed()
+	commentRow := visualSelectRow.reversed()
 
 	baseline := vimColorGroup{
 		Name: "Baseline",
@@ -71,7 +71,7 @@ func acme() nofrilsTheme {
 			withName("StatusLine", statusLineRow),
 			withName("Todo", diffAddRow),
 			withName("WarningMsg", errorRow),
-			withName("WildMenu", pmenuRow),
+			withName("WildMenu", statusLineRow.reversed()),
 			withName("Visual", visualSelectRow),
 			withName("VisualNOS", visualNOSRow),
 		},
@@ -80,10 +80,10 @@ func acme() nofrilsTheme {
 	reversed := vimColorGroup{
 		Name: "Reversed",
 		Rows: []vimColorRow{
-			withName("PmenuSbar", pmenuRow),
-			withName("Pmenu", pmenuRow),
-			withName("PmenuThumb", pmenuRow),
-			withName("TabLineSel", statusLineRow),
+			withName("PmenuSbar", reversedRow),
+			withName("Pmenu", reversedRow),
+			withName("PmenuThumb", reversedRow),
+			withName("TabLineSel", reversedRow),
 		},
 	}
 

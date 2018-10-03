@@ -41,7 +41,7 @@ func withName(name string, vcr vimColorRow) vimColorRow {
 	return vcr
 }
 
-func reverse(vcr vimColorRow) vimColorRow {
+func (vcr vimColorRow) reversed() vimColorRow {
 	vcr.BG, vcr.FG = vcr.FG, vcr.BG
 	return vcr
 }
@@ -75,6 +75,7 @@ type vimAttribute struct {
 
 var none = vimAttribute{underline: false, reverse: false}
 var underline = vimAttribute{underline: true, reverse: false}
+var reverse = vimAttribute{underline: false, reverse: true}
 
 func append(str string, more string) string {
 	if str == "" {
