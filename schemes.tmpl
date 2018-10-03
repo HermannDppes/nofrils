@@ -43,7 +43,7 @@ hi {{.Name}}{{template "textStyle" .}}{{end}}
 function! NofrilsFocusComments()
     hi Comment{{template "textStyle" .NormalRow}}
     hi Normal{{template "textStyle" .FadedRow}}
-    hi LineNr{{template "textStyle" .FadedRow}}
+    hi LineNr{{template "textStyle" .LineNrRow}}
     hi Character{{template "textStyle" .NoneRow}}
     hi String{{template "textStyle" .NoneRow}}
 
@@ -55,7 +55,7 @@ endfunction
 function! NofrilsFocusCode()
     hi Comment{{template "textStyle" .FadedRow}}
     hi Normal{{template "textStyle" .NormalRow}}
-    hi LineNr{{template "textStyle" .FadedRow}}
+    hi LineNr{{template "textStyle" .LineNrRow}}
     hi Character{{template "textStyle" .NoneRow}}
     hi String{{template "textStyle" .NoneRow}}
 
@@ -68,7 +68,7 @@ endfunction
 function! NofrilsNormal()
     hi Comment{{template "textStyle" .FadedRow}}
     hi Normal{{template "textStyle" .NormalRow}}
-    hi LineNr{{template "textStyle" .FadedRow}}
+    hi LineNr{{template "textStyle" .LineNrRow}}
     hi Character{{template "textStyle" .NoneRow}}
     hi String{{template "textStyle" .NoneRow}}
 

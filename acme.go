@@ -23,6 +23,7 @@ func acme() nofrilsTheme {
 	heavyStringRow := vimColorRow{FG: colors["NONE"], BG: colors["White"], Attr: none}
 	heavyLineRow := vimColorRow{FG: colors["DeepPink8"], BG: colors["NONE"], Attr: none}
 	reversedRow := vimColorRow{FG: colors["NONE"], BG: colors["NONE"], Attr: reverse}
+	lineNrRow := vimColorRow{FG: colors["DarkGoldenrod"], BG: colors["TermBG"], Attr: none}
 
 	visualNOSRow := directoryRow.reversed()
 	commentRow := visualSelectRow.reversed()
@@ -182,7 +183,7 @@ func acme() nofrilsTheme {
 		HeavyCommentRow: heavyCommentRow,
 		HeavyStringRow:  heavyStringRow,
 		HeavyLineRow:    heavyLineRow,
-
+		LineNrRow:       lineNrRow,
 
 		Groups: []vimColorGroup{
 			baseline,

@@ -122,5 +122,6 @@ type nofrilsTheme struct {
 	HeavyCommentRow vimColorRow
 	HeavyStringRow  vimColorRow
 	HeavyLineRow    vimColorRow
+	LineNrRow       vimColorRow
 	Groups          []vimColorGroup
 }
