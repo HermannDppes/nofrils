@@ -10,9 +10,15 @@ func main() {
 	// Helper to pass two values to the template condAssign
 	// This template emits attr=val if val is non-empty
 	funcMap := template.FuncMap{
-		"assign": func(val string, attr string) map[string]string {
+		"assignStr": func(val string, attr string) map[string]string {
 			return map[string]string{
 				"val":  val,
+				"attr": attr,
+			}
+		},
+		"assignAttr": func(val vimAttribute, attr string) map[string]string {
+			return map[string]string{
+				"val":  val.String(),
 				"attr": attr,
 			}
 		},
@@ -61,11 +67,42 @@ type color struct {
 	GuiCode  string
 }
 
+// Sets over enums should always be emulated as structs with bools –.–'
+type vimAttribute struct {
+	underline bool
+	reverse   bool
+}
+
+var none = vimAttribute{underline: false, reverse: false}
+var underline = vimAttribute{underline: true, reverse: false}
+
+func append(str string, more string) string {
+	if str == "" {
+		return more
+	} else {
+		return str + "," + more
+	}
+}
+
+func (attr vimAttribute) String() string {
+	res := ""
+	if attr.underline {
+		res = append(res, "underline")
+	}
+	if attr.reverse {
+		res = append(res, "reverse")
+	}
+	if res == "" {
+		res = "NONE"
+	}
+	return res
+}
+
 type vimColorRow struct {
 	Name string
 	BG   color
 	FG   color
-	Attr string // only used for underline currently
+	Attr vimAttribute
 }
 
 type vimColorGroup struct {

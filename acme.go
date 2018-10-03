@@ -1,27 +1,27 @@
 package main
 
 func acme() nofrilsTheme {
-	cursorLineRow := vimColorRow{FG: colors["NONE"], BG: colors["White"], Attr: "NONE"}
-	cursorRow := vimColorRow{FG: colors["Aqua"], BG: colors["FG"], Attr: "NONE"}
-	diffAddRow := vimColorRow{FG: colors["Green1"], BG: colors["NONE"], Attr: "NONE"}
-	diffChangeRow := vimColorRow{FG: colors["Orange4"], BG: colors["NONE"], Attr: "NONE"}
-	diffDeleteRow := vimColorRow{FG: colors["Maroon"], BG: colors["NONE"], Attr: "NONE"}
-	diffTextRow := vimColorRow{FG: colors["Navy"], BG: colors["NONE"], Attr: "NONE"}
-	directoryRow := vimColorRow{FG: colors["DeepPink7"], BG: colors["NONE"], Attr: "NONE"}
-	errorRow := vimColorRow{FG: colors["Red1"], BG: colors["White"], Attr: "NONE"}
-	fadedRow := vimColorRow{FG: colors["SandyBrown"], BG: colors["NONE"], Attr: "NONE"}
-	foldedRow := vimColorRow{FG: colors["Grey35"], BG: colors["NONE"], Attr: "NONE"}
-	matchParenRow := vimColorRow{FG: colors["White"], BG: colors["Navy"], Attr: "NONE"}
-	noneRow := vimColorRow{FG: colors["NONE"], BG: colors["NONE"], Attr: "NONE"}
-	normalRow := vimColorRow{FG: colors["Black"], BG: colors["Cornsilk"], Attr: "NONE"}
-	searchRow := vimColorRow{FG: colors["White"], BG: colors["Green1"], Attr: "NONE"}
-	spellRow := vimColorRow{FG: colors["Purple2"], BG: colors["NONE"], Attr: "underline"}
-	statusLineRow := vimColorRow{FG: colors["Black"], BG: colors["Plum2"], Attr: "NONE"}
-	vertSplitRow := vimColorRow{FG: colors["Black"], BG: colors["LightCyan2"], Attr: "NONE"}
-	visualSelectRow := vimColorRow{FG: colors["FG"], BG: colors["LightGoldenrod5"], Attr: "NONE"}
-	heavyCommentRow := vimColorRow{FG: colors["DeepPink8"], BG: colors["NONE"], Attr: "NONE"}
-	heavyStringRow := vimColorRow{FG: colors["Grey100"], BG: colors["NONE"], Attr: "NONE"}
-	heavyLineRow := vimColorRow{FG: colors["DeepPink8"], BG: colors["NONE"], Attr: "NONE"}
+	cursorLineRow := vimColorRow{FG: colors["NONE"], BG: colors["White"], Attr: none}
+	cursorRow := vimColorRow{FG: colors["Aqua"], BG: colors["FG"], Attr: none}
+	diffAddRow := vimColorRow{FG: colors["Green1"], BG: colors["NONE"], Attr: none}
+	diffChangeRow := vimColorRow{FG: colors["Orange4"], BG: colors["NONE"], Attr: none}
+	diffDeleteRow := vimColorRow{FG: colors["Maroon"], BG: colors["NONE"], Attr: none}
+	diffTextRow := vimColorRow{FG: colors["Navy"], BG: colors["NONE"], Attr: none}
+	directoryRow := vimColorRow{FG: colors["DeepPink7"], BG: colors["NONE"], Attr: none}
+	errorRow := vimColorRow{FG: colors["Red1"], BG: colors["White"], Attr: none}
+	fadedRow := vimColorRow{FG: colors["SandyBrown"], BG: colors["NONE"], Attr: none}
+	foldedRow := vimColorRow{FG: colors["Grey35"], BG: colors["NONE"], Attr: none}
+	matchParenRow := vimColorRow{FG: colors["White"], BG: colors["Navy"], Attr: none}
+	noneRow := vimColorRow{FG: colors["NONE"], BG: colors["NONE"], Attr: none}
+	normalRow := vimColorRow{FG: colors["Black"], BG: colors["Cornsilk"], Attr: none}
+	searchRow := vimColorRow{FG: colors["White"], BG: colors["Green1"], Attr: none}
+	spellRow := vimColorRow{FG: colors["Purple2"], BG: colors["NONE"], Attr: underline}
+	statusLineRow := vimColorRow{FG: colors["Black"], BG: colors["Plum2"], Attr: none}
+	vertSplitRow := vimColorRow{FG: colors["Black"], BG: colors["LightCyan2"], Attr: none}
+	visualSelectRow := vimColorRow{FG: colors["FG"], BG: colors["LightGoldenrod5"], Attr: none}
+	heavyCommentRow := vimColorRow{FG: colors["DeepPink8"], BG: colors["NONE"], Attr: none}
+	heavyStringRow := vimColorRow{FG: colors["Grey100"], BG: colors["NONE"], Attr: none}
+	heavyLineRow := vimColorRow{FG: colors["DeepPink8"], BG: colors["NONE"], Attr: none}
 
 	pmenuRow := reverse(normalRow)
 	visualNOSRow := reverse(directoryRow)
