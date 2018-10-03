@@ -163,10 +163,10 @@ func acme() nofrilsTheme {
 	sneak := vimColorGroup{
 		Name: "Sneak",
 		Rows: []vimColorRow{
-			withName("SneakLabelTarget", statusLineRow),
-			withName("SneakScope", statusLineRow),
 			withName("SneakLabelMask", vertSplitRow),
 			withName("SneakTarget", vertSplitRow),
+			withName("SneakLabelTarget", statusLineRow),
+			withName("SneakScope", statusLineRow),
 		},
 	}
 
