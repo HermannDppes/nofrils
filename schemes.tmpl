@@ -38,47 +38,46 @@ hi {{.Name}}{{template "textStyle" .}}{{end}}
 " Helper Functions
 function! NofrilsFocusComments()
     hi Comment{{template "textStyle" .NormalRow}}
-    if g:nofrils_heavycomments
-        hi Comment{{template "textStyle" .HeavyCommentRow}}
-    end
-
     hi Normal{{template "textStyle" .FadedRow}}
     hi LineNr{{template "textStyle" .FadedRow}}
     hi Character{{template "textStyle" .FadedRow}}
     hi String{{template "textStyle" .FadedRow}}
+
+    if g:nofrils_heavycomments
+        hi Comment{{template "textStyle" .HeavyCommentRow}}
+    end
 endfunction
 
 function! NofrilsFocusCode()
-    hi Normal{{template "textStyle" .NormalRow}}
-    if g:nofrils_strbackgrounds
-        hi Character{{template "textStyle" .HeavyStringRow}}
-        hi String{{template "textStyle" .HeavyStringRow}}
-    end
-
     hi Comment{{template "textStyle" .FadedRow}}
+    hi Normal{{template "textStyle" .NormalRow}}
     hi LineNr{{template "textStyle" .FadedRow}}
     hi Character{{template "textStyle" .FadedRow}}
     hi String{{template "textStyle" .FadedRow}}
 
+    if g:nofrils_strbackgrounds
+        hi Character{{template "textStyle" .HeavyStringRow}}
+        hi String{{template "textStyle" .HeavyStringRow}}
+    end
 endfunction
 
 function! NofrilsNormal()
+    hi Comment{{template "textStyle" .FadedRow}}
     hi Normal{{template "textStyle" .NormalRow}}
-
+    hi LineNr{{template "textStyle" .FadedRow}}
     hi Character{{template "textStyle" .NormalRow}}
     hi String{{template "textStyle" .NormalRow}}
+
     " Optional Syntax Features
     if g:nofrils_strbackgrounds
         hi Character{{template "textStyle" .HeavyStringRow}}
         hi String{{template "textStyle" .HeavyStringRow}}
     end
 
-    hi Comment{{template "textStyle" .FadedRow}}
     if g:nofrils_heavycomments
         hi Comment{{template "textStyle" .HeavyCommentRow}}
     end
 
-    hi LineNr{{template "textStyle" .FadedRow}}
     if g:nofrils_heavylinenumbers
         hi LineNr{{template "textStyle" .HeavyLineRow}}
     end
