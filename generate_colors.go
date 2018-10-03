@@ -40,6 +40,22 @@ func reverse(vcr vimColorRow) vimColorRow {
 	return vcr
 }
 
+// Go does not have enums, so we will have to do this in an icky way
+type background struct {
+	dark bool
+}
+
+var light = background{dark: false}
+var dark  = background{dark: true}
+
+func (bg background) String() string {
+	if bg.dark {
+		return "dark"
+	} else {
+		return "light"
+	}
+}
+
 type color struct {
 	TermCode string
 	GuiCode  string
@@ -55,6 +71,7 @@ type vimColorRow struct {
 type nofrilsTheme struct {
 	Name            string
 	Slug            string
+	Background      background
 	FadedRow        vimColorRow
 	NoneRow         vimColorRow
 	NormalRow       vimColorRow

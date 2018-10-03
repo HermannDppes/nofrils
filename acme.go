@@ -30,6 +30,8 @@ func acme() nofrilsTheme {
 	nft := nofrilsTheme{
 		Name:            "No Frils Acme",
 		Slug:            "nofrils-acme",
+		Background:      light,
+
 		FadedRow:        fadedRow,
 		NoneRow:         noneRow,
 		NormalRow:       normalRow,
