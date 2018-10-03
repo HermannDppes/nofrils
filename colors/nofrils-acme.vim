@@ -24,7 +24,7 @@ endif
 set background=light
 
 " Baseline
-hi Normal term=NONE cterm=NONE ctermfg=black ctermbg=230 gui=NONE guifg=#000000 guibg=#FFFFD7
+hi Normal term=NONE cterm=NONE ctermfg=black ctermbg=230 gui=NONE guifg=black guibg=#FFFFD7
 
 " Faded
 hi ColorColumn term=NONE cterm=NONE ctermfg=NONE ctermbg=253 gui=NONE guifg=NONE guibg=#DADADA
@@ -57,7 +57,7 @@ hi Search term=NONE cterm=NONE ctermfg=white ctermbg=2 gui=NONE guifg=white guib
 hi StatusLine term=NONE cterm=NONE ctermbg=183 ctermfg=fg gui=NONE guifg=white guibg=#000000
 hi Todo term=NONE cterm=NONE ctermfg=2 ctermbg=NONE gui=NONE guifg=#008000 guibg=NONE
 hi WarningMsg term=NONE cterm=NONE ctermfg=9 ctermbg=white gui=NONE guifg=#FF5555 guibg=white
-hi WildMenu term=NONE cterm=NONE ctermbg=fg ctermfg=183 gui=NONE guifg=#000000 guibg=white
+hi WildMenu term=NONE cterm=NONE ctermbg=fg ctermfg=183 gui=NONE guifg=black guibg=white
 hi Visual term=NONE cterm=NONE ctermfg=fg ctermbg=222 gui=NONE guifg=NONE guibg=#FFD787
 hi VisualNOS term=underline cterm=underline ctermfg=fg ctermbg=222 gui=underline guifg=NONE guibg=#FFD787
 
@@ -133,7 +133,7 @@ hi SneakScope term=NONE cterm=NONE ctermfg=black ctermbg=183 gui=NONE guifg=blac
 " Helper Functions
 function! NofrilsFocusComments()
     hi Comment term=NONE cterm=NONE ctermfg=black ctermbg=NONE gui=NONE guifg=#AF8700 guibg=NONE
-    hi Normal term=NONE cterm=NONE ctermfg=136 ctermbg=230 gui=NONE guifg=#000000 guibg=#FFFFD7
+    hi Normal term=NONE cterm=NONE ctermfg=136 ctermbg=230 gui=NONE guifg=black guibg=#FFFFD7
     hi LineNr term=NONE cterm=NONE ctermfg=136 ctermbg=bg gui=NONE guifg=#AF8700 guibg=NONE
     hi Character term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
     hi String term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
@@ -145,7 +145,7 @@ endfunction
 
 function! NofrilsFocusCode()
     hi Comment term=NONE cterm=NONE ctermfg=136 ctermbg=NONE gui=NONE guifg=#AF8700 guibg=NONE
-    hi Normal term=NONE cterm=NONE ctermfg=black ctermbg=230 gui=NONE guifg=#000000 guibg=#FFFFD7
+    hi Normal term=NONE cterm=NONE ctermfg=black ctermbg=230 gui=NONE guifg=black guibg=#FFFFD7
     hi LineNr term=NONE cterm=NONE ctermfg=136 ctermbg=bg gui=NONE guifg=#AF8700 guibg=NONE
     hi Character term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
     hi String term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
@@ -158,7 +158,7 @@ endfunction
 
 function! NofrilsNormal()
     hi Comment term=NONE cterm=NONE ctermfg=136 ctermbg=NONE gui=NONE guifg=#AF8700 guibg=NONE
-    hi Normal term=NONE cterm=NONE ctermfg=black ctermbg=230 gui=NONE guifg=#000000 guibg=#FFFFD7
+    hi Normal term=NONE cterm=NONE ctermfg=black ctermbg=230 gui=NONE guifg=black guibg=#FFFFD7
     hi LineNr term=NONE cterm=NONE ctermfg=136 ctermbg=bg gui=NONE guifg=#AF8700 guibg=NONE
     hi Character term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
     hi String term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
