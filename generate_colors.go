@@ -68,6 +68,11 @@ type vimColorRow struct {
 	Attr string // only used for underline currently
 }
 
+type vimColorGroup struct {
+	Name string
+	Rows []vimColorRow
+}
+
 type nofrilsTheme struct {
 	Name            string
 	Slug            string
@@ -79,5 +84,5 @@ type nofrilsTheme struct {
 	HeavyCommentRow vimColorRow
 	HeavyStringRow  vimColorRow
 	HeavyLineRow    vimColorRow
-	Rows            []vimColorRow
+	Groups          []vimColorGroup
 }

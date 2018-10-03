@@ -34,8 +34,10 @@ endif
 
 set background={{.Background}}
 
-" Baseline{{range .Rows}}
+{{range .Groups}}
+" {{.Name}}{{range .Rows}}
 hi {{.Name}}{{template "textStyle" .}}{{end}}
+{{end}}
 
 " Helper Functions
 function! NofrilsFocusComments()
