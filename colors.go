@@ -211,7 +211,7 @@ var colors = map[string]color{
 	"Purple4":           color{"56", "#5F00D7"},
 	"Purple5":           color{"54", "#5F0087"},
 	"Purple6":           color{"55", "#5F00AF"},
-	"Red1":              color{"9", "#FF0000"},
+	"Red1":              color{"9", "#FF5555"},
 	"Red2":              color{"196", "#FF0000"},
 	"Red3":              color{"124", "#AF0000"},
 	"Red4":              color{"160", "#D70000"},
