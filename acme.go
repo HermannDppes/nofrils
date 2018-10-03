@@ -50,63 +50,77 @@ func acme() nofrilsTheme {
 		},
 	}
 
-	remaining := vimColorGroup{
-		Name: "Remaining",
+	highlight := vimColorGroup{
+		Name: "Highlight",
 		Rows: []vimColorRow{
-			withName("MatchParen", matchParenRow),
-			withName("PmenuSel", statusLineRow),
-			withName("Visual", visualSelectRow),
-			withName("VisualNOS", visualNOSRow),
-			withName("Todo", diffAddRow),
-
-			withName("TabLineFill", vertSplitRow),
-			withName("TabLine", vertSplitRow),
-
-			withName("TabLineSel", statusLineRow),
-			withName("StatusLine", statusLineRow),
-			withName("SneakLabelTarget", statusLineRow),
-			withName("SneakScope", statusLineRow),
-
 			withName("CursorColumn", cursorLineRow),
+			withName("CursorIM", cursorRow),
 			withName("CursorLineNr", cursorLineRow),
 			withName("CursorLine", cursorLineRow),
-
-			withName("CursorIM", cursorRow),
 			withName("Cursor", cursorRow),
-
 			withName("Directory", directoryRow),
+			withName("ErrorMsg", errorRow),
+			withName("Error", errorRow),
+			withName("IncSearch", searchRow),
+			withName("MatchParen", matchParenRow),
 			withName("ModeMsg", directoryRow),
 			withName("MoreMsg", directoryRow),
+			withName("PmenuSel", statusLineRow),
 			withName("Question", directoryRow),
-
-			withName("Error", errorRow),
-			withName("ErrorMsg", errorRow),
-			withName("WarningMsg", errorRow),
-
-			withName("IncSearch", searchRow),
 			withName("Search", searchRow),
+			withName("StatusLine", statusLineRow),
+			withName("Todo", diffAddRow),
+			withName("WarningMsg", errorRow),
+			withName("WildMenu", pmenuRow),
+			withName("Visual", visualSelectRow),
+			withName("VisualNOS", visualNOSRow),
+		},
+	}
 
+	reversed := vimColorGroup{
+		Name: "Reversed",
+		Rows: []vimColorRow{
 			withName("PmenuSbar", pmenuRow),
 			withName("Pmenu", pmenuRow),
 			withName("PmenuThumb", pmenuRow),
-			withName("WildMenu", pmenuRow),
+			withName("TabLineSel", statusLineRow),
+		},
+	}
 
+	diff := vimColorGroup{
+		Name: "Diff",
+		Rows: []vimColorRow{
 			withName("DiffAdd", diffAddRow),
 			withName("DiffChange", diffChangeRow),
 			withName("DiffDelete", diffDeleteRow),
 			withName("DiffText", diffTextRow),
+		},
+	}
 
+	spell := vimColorGroup{
+		Name: "Spell",
+		Rows: []vimColorRow{
 			withName("SpellBad", spellRow),
 			withName("SpellCap", spellRow),
 			withName("SpellLocal", spellRow),
 			withName("SpellRare", spellRow),
+		},
+	}
 
-			withName("SneakLabelMask", vertSplitRow),
-			withName("SneakTarget", vertSplitRow),
-
+	vim_features := vimColorGroup{
+		Name: "Vim Features",
+		Rows: []vimColorRow{
 			withName("Menu", noneRow),
 			withName("Scrollbar", noneRow),
+			withName("TabLineFill", vertSplitRow),
+			withName("TabLine", vertSplitRow),
 			withName("Tooltip", noneRow),
+		},
+	}
+
+	syntax_highsepiaing := vimColorGroup{
+		Name: "Syntax Highsepiaing (or lack there of)",
+		Rows: []vimColorRow{
 			withName("Boolean", noneRow),
 			withName("Character", noneRow),
 			withName("Conceal", noneRow),
@@ -146,6 +160,16 @@ func acme() nofrilsTheme {
 		},
 	}
 
+	sneak := vimColorGroup{
+		Name: "Sneak",
+		Rows: []vimColorRow{
+			withName("SneakLabelTarget", statusLineRow),
+			withName("SneakScope", statusLineRow),
+			withName("SneakLabelMask", vertSplitRow),
+			withName("SneakTarget", vertSplitRow),
+		},
+	}
+
 	nft := nofrilsTheme{
 		Name:            "No Frils Acme",
 		Slug:            "nofrils-acme",
@@ -163,7 +187,13 @@ func acme() nofrilsTheme {
 		Groups: []vimColorGroup{
 			baseline,
 			faded,
-			remaining,
+			highlight,
+			reversed,
+			diff,
+			spell,
+			vim_features,
+			syntax_highsepiaing,
+			sneak,
 		},
 	}
 	return nft
