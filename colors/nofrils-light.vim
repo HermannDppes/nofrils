@@ -38,7 +38,7 @@ hi SpecialKey term=NONE cterm=NONE ctermfg=240 ctermbg=bg gui=NONE guifg=#585858
 hi StatusLineNC term=NONE cterm=NONE ctermfg=fg ctermbg=248 gui=NONE guifg=fg guibg=#A8A8A8
 hi VertSplit term=NONE cterm=NONE ctermfg=fg ctermbg=248 gui=NONE guifg=fg guibg=#A8A8A8
 
-" Highlighted
+" Highlight
 hi CursorColumn term=NONE cterm=NONE ctermfg=NONE ctermbg=253 gui=NONE guifg=NONE guibg=#DADADA
 hi CursorIM term=NONE cterm=NONE ctermfg=fg ctermbg=4 gui=NONE guifg=fg guibg=#00FFFF
 hi CursorLineNr term=NONE cterm=NONE ctermfg=NONE ctermbg=white gui=NONE guifg=NONE guibg=white
