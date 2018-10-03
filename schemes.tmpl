@@ -77,11 +77,9 @@ function! NofrilsNormal()
         hi Character{{template "textStyle" .HeavyStringRow}}
         hi String{{template "textStyle" .HeavyStringRow}}
     end
-
     if g:nofrils_heavycomments
         hi Comment{{template "textStyle" .HeavyCommentRow}}
     end
-
     if g:nofrils_heavylinenumbers
         hi LineNr{{template "textStyle" .HeavyLineRow}}
     end
