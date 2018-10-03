@@ -9,7 +9,7 @@ func acme() nofrilsTheme {
 	diffTextRow := vimColorRow{FG: colors["Navy"], BG: colors["NONE"], Attr: none}
 	directoryRow := vimColorRow{FG: colors["DeepPink7"], BG: colors["NONE"], Attr: none}
 	errorRow := vimColorRow{FG: colors["Red1"], BG: colors["White"], Attr: none}
-	fadedRow := vimColorRow{FG: colors["SandyBrown"], BG: colors["NONE"], Attr: none}
+	fadedRow := vimColorRow{FG: colors["DarkGoldenrod"], BG: colors["NONE"], Attr: none}
 	foldedRow := vimColorRow{FG: colors["Grey35"], BG: colors["NONE"], Attr: none}
 	matchParenRow := vimColorRow{FG: colors["White"], BG: colors["Navy"], Attr: none}
 	noneRow := vimColorRow{FG: colors["NONE"], BG: colors["NONE"], Attr: none}
