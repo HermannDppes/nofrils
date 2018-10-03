@@ -6,13 +6,13 @@
 
 {{define "condAssign"}}{{if .val}} {{.attr}}={{.val}}{{end}}{{end}}
 {{define "textStyle"}}{{/*
-	*/}}{{template "condAssign" assign .FG.TermCode "ctermfg"}}{{/*
-	*/}}{{template "condAssign" assign .BG.TermCode "ctermbg"}}{{/*
-	*/}}{{template "condAssign" assign .FG.GuiCode  "guifg"}}{{/*
-	*/}}{{template "condAssign" assign .BG.GuiCode  "guibg"}}{{/*
 	*/}}{{template "condAssign" assign .Attr        "term"}}{{/*
 	*/}}{{template "condAssign" assign .Attr        "cterm"}}{{/*
+	*/}}{{template "condAssign" assign .FG.TermCode "ctermfg"}}{{/*
+	*/}}{{template "condAssign" assign .BG.TermCode "ctermbg"}}{{/*
 	*/}}{{template "condAssign" assign .Attr        "gui"}}{{/*
+	*/}}{{template "condAssign" assign .FG.GuiCode  "guifg"}}{{/*
+	*/}}{{template "condAssign" assign .BG.GuiCode  "guibg"}}{{/*
 */}}{{end}}
 
 hi clear
