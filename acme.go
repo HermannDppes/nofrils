@@ -20,7 +20,7 @@ func acme() nofrilsTheme {
 	vertSplitRow := vimColorRow{FG: colors["Black"], BG: colors["LightCyan2"], Attr: none}
 	visualSelectRow := vimColorRow{FG: colors["FG"], BG: colors["LightGoldenrod5"], Attr: none}
 	heavyCommentRow := vimColorRow{FG: colors["DeepPink8"], BG: colors["NONE"], Attr: none}
-	heavyStringRow := vimColorRow{FG: colors["Grey100"], BG: colors["NONE"], Attr: none}
+	heavyStringRow := vimColorRow{FG: colors["NONE"], BG: colors["White"], Attr: none}
 	heavyLineRow := vimColorRow{FG: colors["DeepPink8"], BG: colors["NONE"], Attr: none}
 	reversedRow := vimColorRow{FG: colors["NONE"], BG: colors["NONE"], Attr: reverse}
 
