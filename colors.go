@@ -5,7 +5,7 @@ var colors = map[string]color{
 	"Aquamarine1":       color{"122", "#87FFD7"},
 	"Aquamarine2":       color{"86", "#5FFFD7"},
 	"Aquamarine3":       color{"79", "#5FD7AF"},
-	"Black":             color{"0", "#000000"},
+	"Black":             color{"black", "#000000"},
 	"Blue1":             color{"12", "#0000FF"},
 	"Blue2":             color{"21", "#0000FF"},
 	"Blue3":             color{"19", "#0000AF"},
