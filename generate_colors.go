@@ -41,7 +41,7 @@ func withName(name string, vcr vimColorRow) vimColorRow {
 	return vcr
 }
 
-func (vcr vimColorRow) reversed() vimColorRow {
+func (vcr vimColorRow) swapped() vimColorRow {
 	vcr.BG, vcr.FG = vcr.FG, vcr.BG
 	return vcr
 }

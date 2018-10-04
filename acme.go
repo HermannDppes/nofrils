@@ -29,7 +29,8 @@ func acme() nofrilsTheme {
 	reversedRow     := col_row("NONE",          "NONE").reverse()
 	lineNrRow       := col_row("DarkGoldenrod", "TermBG")
 
-	visualNOSRow := directoryRow.reversed()
+	visualNOSRow := directoryRow.swapped()
+	wildMenuRow := statusLineRow.swapped()
 
 	baseline := vimColorGroup{
 		Name: "Baseline",
@@ -75,7 +76,7 @@ func acme() nofrilsTheme {
 			withName("StatusLine", statusLineRow),
 			withName("Todo", diffAddRow),
 			withName("WarningMsg", errorRow),
-			withName("WildMenu", statusLineRow.reversed()),
+			withName("WildMenu", wildMenuRow),
 			withName("Visual", visualSelectRow),
 			withName("VisualNOS", visualNOSRow),
 		},
