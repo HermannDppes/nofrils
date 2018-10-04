@@ -1,33 +1,33 @@
 package main
 
-func col_row(fg string, bg string, attr vimAttribute) vimColorRow {
-	return vimColorRow{FG: colors[fg], BG: colors[bg], Attr: attr}
+func col_row(fg string, bg string) vimColorRow {
+	return vimColorRow{FG: colors[fg], BG: colors[bg], Attr: none}
 }
 
 func acme() nofrilsTheme {
-	cursorLineRow := col_row("NONE", "White", none)
-	cursorRow := col_row("Aqua", "FG", none)
-	diffAddRow := col_row("Green1", "NONE", none)
-	diffChangeRow := col_row("Orange4", "NONE", none)
-	diffDeleteRow := col_row("Maroon", "NONE", none)
-	diffTextRow := col_row("Navy", "NONE", none)
-	directoryRow := col_row("DeepPink7", "NONE", none)
-	errorRow := col_row("Red1", "White", none)
-	fadedRow := col_row("DarkGoldenrod", "NONE", none)
-	foldedRow := col_row("Grey35", "NONE", none)
-	matchParenRow := col_row("White", "Navy", none)
-	noneRow := col_row("NONE", "NONE", none)
-	normalRow := col_row("Black", "Cornsilk", none)
-	searchRow := col_row("White", "Green1", none)
-	spellRow := col_row("Purple2", "NONE", underline)
-	statusLineRow := col_row("Black", "Plum2", none)
-	vertSplitRow := col_row("Black", "LightCyan2", none)
-	visualSelectRow := col_row("FG", "LightGoldenrod5", none)
-	heavyCommentRow := col_row("DeepPink8", "NONE", none)
-	heavyStringRow := col_row("NONE", "White", none)
-	heavyLineRow := col_row("DeepPink8", "NONE", none)
-	reversedRow := col_row("NONE", "NONE", reverse)
-	lineNrRow := col_row("DarkGoldenrod", "TermBG", none)
+	cursorLineRow   := col_row("NONE",          "White")
+	cursorRow       := col_row("Aqua",          "FG")
+	diffAddRow      := col_row("Green1",        "NONE")
+	diffChangeRow   := col_row("Orange4",       "NONE")
+	diffDeleteRow   := col_row("Maroon",        "NONE")
+	diffTextRow     := col_row("Navy",          "NONE")
+	directoryRow    := col_row("DeepPink7",     "NONE")
+	errorRow        := col_row("Red1",          "White")
+	fadedRow        := col_row("DarkGoldenrod", "NONE")
+	foldedRow       := col_row("Grey35",        "NONE")
+	matchParenRow   := col_row("White",         "Navy")
+	noneRow         := col_row("NONE",          "NONE")
+	normalRow       := col_row("Black",         "Cornsilk")
+	searchRow       := col_row("White",         "Green1")
+	spellRow        := col_row("Purple2",       "NONE").underline()
+	statusLineRow   := col_row("Black",         "Plum2")
+	vertSplitRow    := col_row("Black",         "LightCyan2")
+	visualSelectRow := col_row("FG",            "LightGoldenrod5")
+	heavyCommentRow := col_row("DeepPink8",     "NONE")
+	heavyStringRow  := col_row("NONE",          "White")
+	heavyLineRow    := col_row("DeepPink8",     "NONE")
+	reversedRow     := col_row("NONE",          "NONE").reverse()
+	lineNrRow       := col_row("DarkGoldenrod", "TermBG")
 
 	visualNOSRow := directoryRow.reversed()
 

@@ -69,13 +69,21 @@ type color struct {
 
 // Sets over enums should always be emulated as structs with bools –.–'
 type vimAttribute struct {
-	underline bool
-	reverse   bool
+	underlined bool
+	reversed   bool
 }
 
-var none = vimAttribute{underline: false, reverse: false}
-var underline = vimAttribute{underline: true, reverse: false}
-var reverse = vimAttribute{underline: false, reverse: true}
+func (attr vimAttribute) underline() vimAttribute {
+	attr.underlined = true
+	return attr
+}
+
+func (attr vimAttribute) reverse() vimAttribute {
+	attr.reversed = true
+	return attr
+}
+
+var none = vimAttribute{underlined: false, reversed: false}
 
 func append(str string, more string) string {
 	if str == "" {
@@ -87,10 +95,10 @@ func append(str string, more string) string {
 
 func (attr vimAttribute) String() string {
 	res := ""
-	if attr.underline {
+	if attr.underlined {
 		res = append(res, "underline")
 	}
-	if attr.reverse {
+	if attr.reversed {
 		res = append(res, "reverse")
 	}
 	if res == "" {
@@ -104,6 +112,16 @@ type vimColorRow struct {
 	BG   color
 	FG   color
 	Attr vimAttribute
+}
+
+func (col_row vimColorRow) underline() vimColorRow {
+	col_row.Attr = col_row.Attr.underline()
+	return col_row
+}
+
+func (col_row vimColorRow) reverse() vimColorRow {
+	col_row.Attr = col_row.Attr.reverse()
+	return col_row
 }
 
 type vimColorGroup struct {
