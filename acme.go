@@ -23,10 +23,12 @@ func acme() nofrilsTheme {
 	normalRow       := col_row("Black",         "Cornsilk")
 	searchRow       := col_row("White",         "Green1")
 	spellRow        := col_row("Purple2",       "NONE").underline()
-	statusLineRow   := col_row("Black",         "Plum2")
+	statusLineRow   := col_row("FG",            "Plum2")
+	pmenuSelRow     := col_row("FG",            "Fuchsia")
+	sneak2Row       := col_row("Black",         "Plum2")
 	tabLineFillRow  := col_row("FG",            "DarkGoldenrod")
 	vertSplitRow    := col_row("FG",            "LightCyan2")
-	sneakRow        := col_row("Black",         "LightCyan2")
+	sneak1Row       := col_row("Black",         "LightCyan2")
 	heavyCommentRow := col_row("DeepPink8",     "NONE")
 	heavyStringRow  := col_row("NONE",          "White")
 	heavyLineRow    := col_row("DeepPink8",     "NONE")
@@ -74,7 +76,7 @@ func acme() nofrilsTheme {
 			withName("MatchParen", matchParenRow),
 			withName("ModeMsg", directoryRow),
 			withName("MoreMsg", directoryRow),
-			withName("PmenuSel", statusLineRow),
+			withName("PmenuSel", pmenuSelRow),
 			withName("Question", directoryRow),
 			withName("Search", searchRow),
 			withName("StatusLine", statusLineRow),
@@ -172,10 +174,10 @@ func acme() nofrilsTheme {
 	sneak := vimColorGroup{
 		Name: "Sneak",
 		Rows: []vimColorRow{
-			withName("SneakLabelMask", sneakRow),
-			withName("SneakTarget", sneakRow),
-			withName("SneakLabelTarget", statusLineRow),
-			withName("SneakScope", statusLineRow),
+			withName("SneakLabelMask", sneak1Row),
+			withName("SneakTarget", sneak1Row),
+			withName("SneakLabelTarget", sneak2Row),
+			withName("SneakScope", sneak2Row),
 		},
 	}
 
