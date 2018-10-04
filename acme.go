@@ -15,6 +15,7 @@ func acme() nofrilsTheme {
 	errorRow        := col_row("Red1",          "White")
 	fadedRow        := col_row("DarkGoldenrod", "NONE")
 	foldedRow       := col_row("Grey35",        "NONE")
+	specialKeyRow   := col_row("Grey35",        "BG")
 	matchParenRow   := col_row("White",         "Navy")
 	noneRow         := col_row("NONE",          "NONE")
 	normalRow       := col_row("Black",         "Cornsilk")
@@ -22,15 +23,16 @@ func acme() nofrilsTheme {
 	spellRow        := col_row("Purple2",       "NONE").underline()
 	statusLineRow   := col_row("Black",         "Plum2")
 	tabLineFillRow  := col_row("FG",            "DarkGoldenrod")
-	vertSplitRow    := col_row("Black",         "LightCyan2")
+	vertSplitRow    := col_row("FG",            "LightCyan2")
+	sneakRow        := col_row("Black",         "LightCyan2")
 	visualSelectRow := col_row("FG",            "LightGoldenrod5")
 	heavyCommentRow := col_row("DeepPink8",     "NONE")
 	heavyStringRow  := col_row("NONE",          "White")
 	heavyLineRow    := col_row("DeepPink8",     "NONE")
 	reversedRow     := col_row("NONE",          "NONE").reverse()
 	lineNrRow       := col_row("DarkGoldenrod", "TermBG")
+	visualNOSRow    := col_row("TermFG",        "LightGoldenrod4").underline()
 
-	visualNOSRow := directoryRow.swapped()
 	wildMenuRow := statusLineRow.swapped()
 
 	baseline := vimColorGroup{
@@ -47,10 +49,10 @@ func acme() nofrilsTheme {
 			withName("Comment", fadedRow),
 			withName("FoldColumn", fadedRow),
 			withName("Folded", foldedRow),
-			withName("LineNr", fadedRow),
+			withName("LineNr", lineNrRow),
 			withName("NonText", fadedRow),
-			withName("SignColumn", foldedRow),
-			withName("SpecialKey", foldedRow),
+			withName("SignColumn", specialKeyRow),
+			withName("SpecialKey", specialKeyRow),
 			withName("StatusLineNC", vertSplitRow),
 			withName("VertSplit", vertSplitRow),
 		},
@@ -169,8 +171,8 @@ func acme() nofrilsTheme {
 	sneak := vimColorGroup{
 		Name: "Sneak",
 		Rows: []vimColorRow{
-			withName("SneakLabelMask", vertSplitRow),
-			withName("SneakTarget", vertSplitRow),
+			withName("SneakLabelMask", sneakRow),
+			withName("SneakTarget", sneakRow),
 			withName("SneakLabelTarget", statusLineRow),
 			withName("SneakScope", statusLineRow),
 		},
