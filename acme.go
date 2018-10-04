@@ -27,13 +27,13 @@ func acme() nofrilsTheme {
 	tabLineFillRow  := col_row("FG",            "DarkGoldenrod")
 	vertSplitRow    := col_row("FG",            "LightCyan2")
 	sneakRow        := col_row("Black",         "LightCyan2")
-	visualSelectRow := col_row("FG",            "LightGoldenrod5")
 	heavyCommentRow := col_row("DeepPink8",     "NONE")
 	heavyStringRow  := col_row("NONE",          "White")
 	heavyLineRow    := col_row("DeepPink8",     "NONE")
 	reversedRow     := col_row("NONE",          "NONE").reverse()
 	lineNrRow       := col_row("DarkGoldenrod", "TermBG")
-	visualNOSRow    := col_row("TermFG",        "LightGoldenrod4").underline()
+	visualRow       := col_row("TermFG",        "LightGoldenrod4")
+	visualNOSRow    := visualRow.underline()
 
 	wildMenuRow := statusLineRow.swapped()
 
@@ -82,7 +82,7 @@ func acme() nofrilsTheme {
 			withName("Todo", diffAddRow),
 			withName("WarningMsg", errorRow),
 			withName("WildMenu", wildMenuRow),
-			withName("Visual", visualSelectRow),
+			withName("Visual", visualRow),
 			withName("VisualNOS", visualNOSRow),
 		},
 	}
