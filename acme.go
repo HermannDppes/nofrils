@@ -5,7 +5,7 @@ func col_row(fg string, bg string) vimColorRow {
 }
 
 func acme() nofrilsTheme {
-	cursorLineRow   := col_row("NONE",          "White")
+	cursorLineRow   := col_row("NONE",          "Khaki1")
 	cursorRow       := col_row("Aqua",          "FG")
 	diffAddRow      := col_row("Green1",        "NONE")
 	diffChangeRow   := col_row("Orange4",       "NONE")
@@ -21,6 +21,7 @@ func acme() nofrilsTheme {
 	searchRow       := col_row("White",         "Green1")
 	spellRow        := col_row("Purple2",       "NONE").underline()
 	statusLineRow   := col_row("Black",         "Plum2")
+	tabLineFillRow  := col_row("FG",            "DarkGoldenrod")
 	vertSplitRow    := col_row("Black",         "LightCyan2")
 	visualSelectRow := col_row("FG",            "LightGoldenrod5")
 	heavyCommentRow := col_row("DeepPink8",     "NONE")
@@ -117,8 +118,8 @@ func acme() nofrilsTheme {
 		Rows: []vimColorRow{
 			withName("Menu", noneRow),
 			withName("Scrollbar", noneRow),
-			withName("TabLineFill", vertSplitRow),
-			withName("TabLine", vertSplitRow),
+			withName("TabLineFill", tabLineFillRow),
+			withName("TabLine", noneRow),
 			withName("Tooltip", noneRow),
 		},
 	}
