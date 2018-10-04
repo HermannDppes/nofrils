@@ -57,7 +57,7 @@ hi Search term=NONE cterm=NONE ctermfg=white ctermbg=2 gui=NONE guifg=white guib
 hi StatusLine term=NONE cterm=NONE ctermfg=fg ctermbg=183 gui=NONE guifg=white guibg=#000000
 hi Todo term=NONE cterm=NONE ctermfg=2 ctermbg=NONE gui=NONE guifg=#008000 guibg=NONE
 hi WarningMsg term=NONE cterm=NONE ctermfg=9 ctermbg=white gui=NONE guifg=#FF5555 guibg=white
-hi WildMenu term=NONE cterm=NONE ctermfg=183 ctermbg=fg gui=NONE guifg=black guibg=white
+hi WildMenu term=NONE cterm=NONE ctermfg=183 ctermbg=fg gui=NONE guifg=#D7AFFF guibg=fg
 hi Visual term=NONE cterm=NONE ctermfg=fg ctermbg=222 gui=NONE guifg=NONE guibg=#FFD787
 hi VisualNOS term=underline cterm=underline ctermfg=fg ctermbg=222 gui=underline guifg=NONE guibg=#FFD787
 

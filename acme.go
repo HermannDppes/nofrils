@@ -34,8 +34,7 @@ func acme() nofrilsTheme {
 	lineNrRow       := col_row("DarkGoldenrod", "TermBG")
 	visualRow       := col_row("TermFG",        "LightGoldenrod4")
 	visualNOSRow    := visualRow.underline()
-
-	wildMenuRow := statusLineRow.swapped()
+	wildMenuRow     := col_row("Plum2",         "FG")
 
 	baseline := vimColorGroup{
 		Name: "Baseline",
