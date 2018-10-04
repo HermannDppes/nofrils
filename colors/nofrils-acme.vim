@@ -40,10 +40,10 @@ hi VertSplit term=NONE cterm=NONE ctermfg=fg ctermbg=195 gui=NONE guifg=fg guibg
 
 " Highlight
 hi CursorColumn term=NONE cterm=NONE ctermfg=NONE ctermbg=228 gui=NONE guifg=NONE guibg=#FFFF87
-hi CursorIM term=NONE cterm=NONE ctermfg=fg ctermbg=14 gui=NONE guifg=fg guibg=#00FFFF
+hi CursorIM term=NONE cterm=NONE ctermfg=fg ctermbg=4 gui=NONE guifg=fg guibg=#000080
 hi CursorLineNr term=NONE cterm=NONE ctermfg=black ctermbg=228 gui=NONE guifg=NONE guibg=#FFFF87
 hi CursorLine term=NONE cterm=NONE ctermfg=NONE ctermbg=228 gui=NONE guifg=NONE guibg=#FFFF87
-hi Cursor term=NONE cterm=NONE ctermfg=fg ctermbg=14 gui=NONE guifg=fg guibg=#00FFFF
+hi Cursor term=NONE cterm=NONE ctermfg=fg ctermbg=4 gui=NONE guifg=fg guibg=#000080
 hi Directory term=NONE cterm=NONE ctermfg=53 ctermbg=NONE gui=NONE guifg=#5F005F guibg=NONE
 hi ErrorMsg term=NONE cterm=NONE ctermfg=9 ctermbg=white gui=NONE guifg=#FF5555 guibg=white
 hi Error term=NONE cterm=NONE ctermfg=9 ctermbg=white gui=NONE guifg=#FF5555 guibg=white
