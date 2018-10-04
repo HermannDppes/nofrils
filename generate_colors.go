@@ -114,14 +114,14 @@ type vimColorRow struct {
 	Attr vimAttribute
 }
 
-func (col_row vimColorRow) underline() vimColorRow {
-	col_row.Attr = col_row.Attr.underline()
-	return col_row
+func (colRow vimColorRow) underline() vimColorRow {
+	colRow.Attr = colRow.Attr.underline()
+	return colRow
 }
 
-func (col_row vimColorRow) reverse() vimColorRow {
-	col_row.Attr = col_row.Attr.reverse()
-	return col_row
+func (colRow vimColorRow) reverse() vimColorRow {
+	colRow.Attr = colRow.Attr.reverse()
+	return colRow
 }
 
 type vimColorGroup struct {

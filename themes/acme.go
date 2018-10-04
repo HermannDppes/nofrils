@@ -1,42 +1,42 @@
 package main
 
-func col_row(fg string, bg string) vimColorRow {
+func colRow(fg string, bg string) vimColorRow {
 	return vimColorRow{FG: colors[fg], BG: colors[bg], Attr: none}
 }
 
 func acme() nofrilsTheme {
-	colorRow        := col_row("NONE",          "Grey85")
-	cursorLineRow   := col_row("NONE",          "Khaki1")
-	cursorLineNrRow := col_row("TermBlack",     "Khaki1")
-	cursorRow       := col_row("FG",            "Navy")
-	diffAddRow      := col_row("Green1",        "NONE")
-	diffChangeRow   := col_row("Orange4",       "NONE")
-	diffDeleteRow   := col_row("Maroon",        "NONE")
-	diffTextRow     := col_row("Navy",          "NONE")
-	directoryRow    := col_row("DeepPink7",     "NONE")
-	errorRow        := col_row("Red1",          "White")
-	fadedRow        := col_row("DarkGoldenrod", "NONE")
-	foldedRow       := col_row("Grey35",        "NONE")
-	specialKeyRow   := col_row("Grey35",        "BG")
-	matchParenRow   := col_row("White",         "Navy")
-	noneRow         := col_row("NONE",          "NONE")
-	normalRow       := col_row("Black",         "Cornsilk")
-	searchRow       := col_row("White",         "Green1")
-	spellRow        := col_row("Purple2",       "NONE").underline()
-	statusLineRow   := col_row("FG",            "Plum2")
-	pmenuSelRow     := col_row("FG",            "Fuchsia")
-	sneak2Row       := col_row("Black",         "Plum2")
-	tabLineFillRow  := col_row("FG",            "DarkGoldenrod")
-	vertSplitRow    := col_row("FG",            "LightCyan2")
-	sneak1Row       := col_row("Black",         "LightCyan2")
-	heavyCommentRow := col_row("DeepPink8",     "NONE")
-	heavyStringRow  := col_row("NONE",          "White")
-	heavyLineRow    := col_row("DeepPink8",     "NONE")
-	reversedRow     := col_row("NONE",          "NONE").reverse()
-	lineNrRow       := col_row("DarkGoldenrod", "TermBG")
-	visualRow       := col_row("TermFG",        "LightGoldenrod4")
+	colorRow        := colRow("NONE",          "Grey85")
+	cursorLineRow   := colRow("NONE",          "Khaki1")
+	cursorLineNrRow := colRow("TermBlack",     "Khaki1")
+	cursorRow       := colRow("FG",            "Navy")
+	diffAddRow      := colRow("Green1",        "NONE")
+	diffChangeRow   := colRow("Orange4",       "NONE")
+	diffDeleteRow   := colRow("Maroon",        "NONE")
+	diffTextRow     := colRow("Navy",          "NONE")
+	directoryRow    := colRow("DeepPink7",     "NONE")
+	errorRow        := colRow("Red1",          "White")
+	fadedRow        := colRow("DarkGoldenrod", "NONE")
+	foldedRow       := colRow("Grey35",        "NONE")
+	specialKeyRow   := colRow("Grey35",        "BG")
+	matchParenRow   := colRow("White",         "Navy")
+	noneRow         := colRow("NONE",          "NONE")
+	normalRow       := colRow("Black",         "Cornsilk")
+	searchRow       := colRow("White",         "Green1")
+	spellRow        := colRow("Purple2",       "NONE").underline()
+	statusLineRow   := colRow("FG",            "Plum2")
+	pmenuSelRow     := colRow("FG",            "Fuchsia")
+	sneak2Row       := colRow("Black",         "Plum2")
+	tabLineFillRow  := colRow("FG",            "DarkGoldenrod")
+	vertSplitRow    := colRow("FG",            "LightCyan2")
+	sneak1Row       := colRow("Black",         "LightCyan2")
+	heavyCommentRow := colRow("DeepPink8",     "NONE")
+	heavyStringRow  := colRow("NONE",          "White")
+	heavyLineRow    := colRow("DeepPink8",     "NONE")
+	reversedRow     := colRow("NONE",          "NONE").reverse()
+	lineNrRow       := colRow("DarkGoldenrod", "TermBG")
+	visualRow       := colRow("TermFG",        "LightGoldenrod4")
 	visualNOSRow    := visualRow.underline()
-	wildMenuRow     := col_row("Plum2",         "FG")
+	wildMenuRow     := colRow("Plum2",         "FG")
 
 	baseline := vimColorGroup{
 		Name: "Baseline",
@@ -118,7 +118,7 @@ func acme() nofrilsTheme {
 		},
 	}
 
-	vim_features := vimColorGroup{
+	vimFeatures := vimColorGroup{
 		Name: "Vim Features",
 		Rows: []vimColorRow{
 			withName("Menu", noneRow),
@@ -129,7 +129,7 @@ func acme() nofrilsTheme {
 		},
 	}
 
-	syntax_highsepiaing := vimColorGroup{
+	syntaxHighsepiaing := vimColorGroup{
 		Name: "Syntax Highsepiaing (or lack there of)",
 		Rows: []vimColorRow{
 			withName("Boolean", noneRow),
@@ -201,8 +201,8 @@ func acme() nofrilsTheme {
 			reversed,
 			diff,
 			spell,
-			vim_features,
-			syntax_highsepiaing,
+			vimFeatures,
+			syntaxHighsepiaing,
 			sneak,
 		},
 	}
