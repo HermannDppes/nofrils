@@ -262,4 +262,5 @@ var colors = map[string]color{
 	"NONE":              color{"NONE", "NONE"},
 	"TermBG":            color{"bg", "NONE"},
 	"TermFG":            color{"fg", "NONE"},
+	"TermBlack":         color{"black", "NONE"},
 }

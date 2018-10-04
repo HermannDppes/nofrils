@@ -7,6 +7,7 @@ func col_row(fg string, bg string) vimColorRow {
 func acme() nofrilsTheme {
 	colorRow        := col_row("NONE",          "Grey85")
 	cursorLineRow   := col_row("NONE",          "Khaki1")
+	cursorLineNrRow := col_row("TermBlack",     "Khaki1")
 	cursorRow       := col_row("FG",            "Navy")
 	diffAddRow      := col_row("Green1",        "NONE")
 	diffChangeRow   := col_row("Orange4",       "NONE")
@@ -64,7 +65,7 @@ func acme() nofrilsTheme {
 		Rows: []vimColorRow{
 			withName("CursorColumn", cursorLineRow),
 			withName("CursorIM", cursorRow),
-			withName("CursorLineNr", cursorLineRow),
+			withName("CursorLineNr", cursorLineNrRow),
 			withName("CursorLine", cursorLineRow),
 			withName("Cursor", cursorRow),
 			withName("Directory", directoryRow),
