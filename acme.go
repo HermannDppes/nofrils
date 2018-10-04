@@ -26,7 +26,6 @@ func acme() nofrilsTheme {
 	lineNrRow := vimColorRow{FG: colors["DarkGoldenrod"], BG: colors["TermBG"], Attr: none}
 
 	visualNOSRow := directoryRow.reversed()
-	commentRow := visualSelectRow.reversed()
 
 	baseline := vimColorGroup{
 		Name: "Baseline",
@@ -39,7 +38,7 @@ func acme() nofrilsTheme {
 		Name: "Faded",
 		Rows: []vimColorRow{
 			withName("ColorColumn", cursorLineRow),
-			withName("Comment", commentRow),
+			withName("Comment", fadedRow),
 			withName("FoldColumn", fadedRow),
 			withName("Folded", foldedRow),
 			withName("LineNr", fadedRow),
