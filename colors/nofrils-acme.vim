@@ -132,8 +132,8 @@ hi SneakScope term=NONE cterm=NONE ctermfg=black ctermbg=183 gui=NONE guifg=blac
 
 " Helper Functions
 function! NofrilsFocusComments()
-    hi Comment term=NONE cterm=NONE ctermfg=black ctermbg=NONE gui=NONE guifg=#AF8700 guibg=NONE
-    hi Normal term=NONE cterm=NONE ctermfg=136 ctermbg=230 gui=NONE guifg=black guibg=#FFFFD7
+    hi Comment term=NONE cterm=NONE ctermfg=black ctermbg=230 gui=NONE guifg=black guibg=#FFFFD7
+    hi Normal term=NONE cterm=NONE ctermfg=136 ctermbg=NONE gui=NONE guifg=#AF8700 guibg=NONE
     hi LineNr term=NONE cterm=NONE ctermfg=136 ctermbg=bg gui=NONE guifg=#AF8700 guibg=NONE
     hi Character term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
     hi String term=NONE cterm=NONE ctermfg=NONE ctermbg=NONE gui=NONE guifg=NONE guibg=NONE
