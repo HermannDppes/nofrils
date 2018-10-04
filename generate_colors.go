@@ -118,7 +118,6 @@ type nofrilsTheme struct {
 	FadedRow        vimColorRow
 	NoneRow         vimColorRow
 	NormalRow       vimColorRow
-	CommentRow      vimColorRow
 	HeavyCommentRow vimColorRow
 	HeavyStringRow  vimColorRow
 	HeavyLineRow    vimColorRow

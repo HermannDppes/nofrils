@@ -179,7 +179,6 @@ func acme() nofrilsTheme {
 		FadedRow:        fadedRow,
 		NoneRow:         noneRow,
 		NormalRow:       normalRow,
-		CommentRow:      commentRow,
 		HeavyCommentRow: heavyCommentRow,
 		HeavyStringRow:  heavyStringRow,
 		HeavyLineRow:    heavyLineRow,
