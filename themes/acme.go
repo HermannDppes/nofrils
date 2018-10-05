@@ -1,9 +1,5 @@
 package main
 
-func colRow(fg string, bg string) vimColorRow {
-	return vimColorRow{FG: colors[fg], BG: colors[bg], Attr: none}
-}
-
 func acme() nofrilsTheme {
 	colorRow        := colRow("NONE",          "Grey85")
 	cursorLineRow   := colRow("NONE",          "Khaki1")

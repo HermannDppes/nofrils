@@ -1,5 +1,9 @@
 package main
 
+func colRow(fg string, bg string) vimColorRow {
+	return vimColorRow{FG: colors[fg], BG: colors[bg], Attr: none}
+}
+
 var colors = map[string]color{
 	"Aqua":              color{"14", "#00FFFF"},
 	"Aquamarine1":       color{"122", "#87FFD7"},
