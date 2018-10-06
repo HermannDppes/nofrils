@@ -28,7 +28,7 @@ func main() {
 	tmpl.Funcs(funcMap)
 	template.Must(tmpl.ParseFiles("schemes.tmpl"))
 
-	nft := acme()
+	nft := nftLight()
 
 	err := tmpl.Execute(os.Stdout, nft)
 	if err != nil {
