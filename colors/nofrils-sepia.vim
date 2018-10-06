@@ -54,7 +54,7 @@ hi MoreMsg term=NONE cterm=NONE ctermfg=53 ctermbg=NONE gui=NONE guifg=#5F005F g
 hi PmenuSel term=NONE cterm=NONE ctermfg=fg ctermbg=13 gui=NONE guifg=fg guibg=#FF00FF
 hi Question term=NONE cterm=NONE ctermfg=53 ctermbg=NONE gui=NONE guifg=#5F005F guibg=NONE
 hi Search term=NONE cterm=NONE ctermfg=white ctermbg=6 gui=NONE guifg=white guibg=#00CDCD
-hi StatusLine term=NONE cterm=NONE ctermfg=white ctermbg=fg gui=NONE guifg=white guibg=#000000
+hi StatusLine term=NONE cterm=NONE ctermfg=white ctermbg=fg gui=NONE guifg=white guibg=black
 hi Todo term=NONE cterm=NONE ctermfg=2 ctermbg=NONE gui=NONE guifg=#008000 guibg=NONE
 hi WarningMsg term=NONE cterm=NONE ctermfg=9 ctermbg=white gui=NONE guifg=#FF5555 guibg=white
 hi WildMenu term=NONE cterm=NONE ctermfg=fg ctermbg=white gui=NONE guifg=black guibg=white
